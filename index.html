@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eduardo Pérez, portafolio</title>
+<meta name="description" content="Portafolio de Eduardo Pérez, estudiante de Ingeniería en Software en la UAdeO. Tiendas en línea, aplicaciones web y herramientas con inteligencia artificial.">
+<meta property="og:title" content="Eduardo Pérez, portafolio">
+<meta property="og:description" content="Estudiante de Ingeniería en Software. Tienda en línea, asistente con IA y aplicación web de lectura.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0A0A0A;color:#B3B3B3;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.65}
+a{color:#B3B3B3;text-decoration:none}
+a:hover{color:#F5F5F5}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1000px;margin:0 auto}
+
+header{padding:20px 24px;border-bottom:1px solid #262626}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px}
+.brand{font-weight:700;font-size:17px;color:#F5F5F5}
+nav{display:flex;flex-wrap:wrap;gap:4px 28px;font-size:15px;font-weight:500}
+nav a{padding:10px 0}
+
+.hero{padding:88px 24px 80px}
+.hero .wrap{display:flex;flex-direction:column;gap:22px}
+.eyebrow{font-size:14px;font-weight:600;color:#FFFFFF}
+h1{font-weight:700;font-size:clamp(38px,6vw,60px);line-height:1.08;color:#F5F5F5;letter-spacing:-0.02em}
+.lead{font-size:clamp(20px,2.6vw,24px);line-height:1.4;color:#F5F5F5;max-width:720px;font-weight:500}
+.hero p.sub{max-width:680px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 22px;border-radius:6px}
+.btn-primary{background:#FFFFFF;color:#0A0A0A}
+.btn-primary:hover{background:#E6E6E6;color:#0A0A0A}
+.btn-ghost{border:1px solid #404040;color:#F5F5F5}
+.btn-ghost:hover{border-color:#8F8F8F}
+
+.projects{padding:72px 24px;background:#111111;border-top:1px solid #262626;border-bottom:1px solid #262626}
+.projects .wrap{display:flex;flex-direction:column;gap:40px}
+.section-head{display:flex;flex-direction:column;gap:8px}
+h2{font-weight:700;font-size:26px;line-height:1.2;color:#F5F5F5}
+.section-head p{max-width:640px}
+
+.card{background:#171717;border:1px solid #2A2A2A;border-radius:10px;padding:32px;display:flex;flex-wrap:wrap;gap:32px}
+.info{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.cat{font-size:13px;font-weight:600;color:#FFFFFF}
+h3{margin-top:4px;font-weight:700;font-size:22px;line-height:1.25;color:#F5F5F5}
+.label{font-size:13px;font-weight:600;color:#F5F5F5}
+.info p{margin-top:2px}
+.media{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.caption{font-size:13px;color:#8F8F8F}
+
+.frame{position:relative;background:#0D0D0D;border:1px solid #2A2A2A;border-radius:8px;overflow:hidden}
+.slide{display:none;width:100%;height:auto}
+.slide.active{display:block}
+.arrow{position:absolute;top:50%;margin-top:-22px;width:44px;height:44px;padding:0;border-radius:50%;border:1px solid #404040;background:rgba(10,10,10,.75);color:#F5F5F5;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.arrow:hover{background:rgba(10,10,10,.95);border-color:#8F8F8F}
+.arrow.prev{left:10px}
+.arrow.next{right:10px}
+.dots{display:flex;justify-content:center;align-items:center}
+.dot{display:flex;padding:14px 6px;border:0;background:transparent;cursor:pointer}
+.dot span{display:block;width:10px;height:10px;border-radius:50%;background:#4A4A4A}
+.dot.active span{background:#FFFFFF}
+.single .arrow,.single .dots{display:none}
+button:focus-visible,a:focus-visible{outline:2px solid #FFFFFF;outline-offset:2px}
+
+.contact{padding:80px 24px}
+.contact .wrap{display:flex;flex-wrap:wrap;gap:32px 64px}
+.contact .intro{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.rows{flex:1 1 320px;min-width:0;display:flex;flex-direction:column}
+.row{display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-bottom:1px solid #262626}
+.row .k{flex:0 0 100px;font-weight:600;color:#F5F5F5}
+.row a{color:#FFFFFF;font-weight:500;overflow-wrap:anywhere}
+.row a:hover{text-decoration:underline}
+
+footer{padding:24px;border-top:1px solid #262626;background:#111111}
+footer .wrap{font-size:14px;color:#8F8F8F}
+
+@media (max-width:520px){
+  .card{padding:20px}
+  .hero{padding:64px 20px 56px}
+  .projects,.contact{padding-left:20px;padding-right:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<div class="brand">Eduardo Pérez</div>
+<nav aria-label="Principal">
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Ingeniería en Software · UAdeO · Los Mochis, Sinaloa</div>
+<h1>Eduardo Pérez</h1>
+<p class="lead">Estudiante de Ingeniería en Software. Desarrollo aplicaciones web, tiendas en línea y herramientas con inteligencia artificial pensadas para resolver necesidades.</p>
+<p class="sub">Actualmente busco un lugar para formarme profesionalmente en una consultoría de software o en una agencia creativa, donde pueda contribuir a proyectos reales y seguir creciendo como desarrollador.</p>
+<div class="actions">
+<a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+<a class="btn btn-ghost" href="#contacto">Contacto</a>
+</div>
+</div>
+</section>
+
+<section class="projects" id="proyectos">
+<div class="wrap">
+<div class="section-head">
+<h2>Proyectos</h2>
+<p>Una selección de tres proyectos, cada uno con el problema que atiende, la solución que desarrollé y las tecnologías utilizadas.</p>
+</div>
+
+<article class="card">
+<div class="info">
+<div>
+<div class="cat">Comercio electrónico</div>
+<h3>El Catrín: tienda en línea</h3>
+</div>
+<div>
+<div class="label">Problema</div>
+<p>El negocio necesitaba vender en línea y mantener su inventario organizado, sin atender cada pedido de forma manual.</p>
+</div>
+<div>
+<div class="label">Solución</div>
+<p>Desarrollé una tienda web corporativa con una base de datos relacional para el inventario y un sistema de pedidos automatizados.</p>
+</div>
+<div>
+<div class="label">Tecnologías</div>
+<p>Desarrollo web · Base de datos relacional · Automatización de pedidos</p>
+</div>
+</div>
+<div class="media" data-carousel>
+<div class="frame">
+<img class="slide" src="images/catrin-inicio.webp" width="1600" height="759" alt="Página de inicio de la tienda El Catrín en escritorio, con vinos, licores y cervezas">
+<img class="slide" src="images/catrin-catalogo-carrito.webp" width="1600" height="768" alt="Catálogo por categorías de El Catrín con el panel del carrito abierto">
+<button type="button" class="arrow prev" aria-label="Imagen anterior"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+<button type="button" class="arrow next" aria-label="Imagen siguiente"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+</div>
+<div class="dots"></div>
+<p class="caption">Inicio de la tienda y catálogo por categorías con el carrito de pedido, que se envía por WhatsApp.</p>
+</div>
+</article>
+
+<article class="card">
+<div class="info">
+<div>
+<div class="cat">Inteligencia artificial</div>
+<h3>Astra: asistente con IA para entrevistas técnicas y estudio</h3>
+</div>
+<div>
+<div class="label">Problema</div>
+<p>Practicar entrevistas técnicas es difícil sin alguien que haga las preguntas y dé retroalimentación, y resolver dudas de una materia fuera de clase no siempre es posible.</p>
+</div>
+<div>
+<div class="label">Solución</div>
+<p>Desarrollé Astra con IA generativa en dos aplicaciones web desplegadas en la nube: un simulador que entrevista según el puesto elegido (por ejemplo, Desarrollador Python Junior), con tres preguntas e indicador de progreso, y un asistente académico.</p>
+</div>
+<div>
+<div class="label">Tecnologías</div>
+<p>Python · Streamlit · Gemini API (SDK de Google GenAI) · Despliegue en la nube</p>
+</div>
+</div>
+<div class="media" data-carousel>
+<div class="frame">
+<img class="slide" src="images/astra-entrevistas.webp" width="1600" height="763" alt="Simulador de entrevistas técnicas de Astra: puesto Desarrollador Python Junior y primera pregunta sobre objetos mutables e inmutables">
+<img class="slide" src="images/astra-asistente.webp" width="1598" height="768" alt="Asistente virtual Astra para la materia de Sistemas Inteligentes, con una conversación de bienvenida">
+<button type="button" class="arrow prev" aria-label="Imagen anterior"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+<button type="button" class="arrow next" aria-label="Imagen siguiente"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+</div>
+<div class="dots"></div>
+<p class="caption">Simulador de entrevistas técnicas y asistente virtual de Sistemas Inteligentes, ambos desplegados en Streamlit.</p>
+</div>
+</article>
+
+<article class="card">
+<div class="info">
+<div>
+<div class="cat">Desarrollo frontend</div>
+<h3>LectorWeb: aplicación web de lectura interactiva</h3>
+</div>
+<div>
+<div class="label">Problema</div>
+<p>Leer obras largas en la web resulta incómodo cuando no hay una forma ágil de encontrar un libro, ubicar un capítulo o ajustar la lectura.</p>
+</div>
+<div>
+<div class="label">Solución</div>
+<p>Desarrollé el frontend de una aplicación de lectura interactiva: una biblioteca con buscador, una lista de capítulos con búsqueda y orden, y un lector con selector de capítulo, navegación anterior y siguiente, modo oscuro y pantalla completa.</p>
+</div>
+<div>
+<div class="label">Tecnologías</div>
+<p>TypeScript</p>
+</div>
+</div>
+<div class="media" data-carousel>
+<div class="frame">
+<img class="slide" src="images/lectorweb-1-biblioteca.webp" width="1600" height="761" alt="Biblioteca de LectorWeb con dos libros y un buscador">
+<img class="slide" src="images/lectorweb-2-capitulos.webp" width="1600" height="765" alt="Detalle de un libro en LectorWeb con la lista de capítulos, buscador y orden">
+<img class="slide" src="images/lectorweb-3-lector.webp" width="1600" height="766" alt="Lector de LectorWeb con selector de capítulo, navegación, modo oscuro y pantalla completa">
+<button type="button" class="arrow prev" aria-label="Imagen anterior"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+<button type="button" class="arrow next" aria-label="Imagen siguiente"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+</div>
+<div class="dots"></div>
+<p class="caption">Biblioteca, lista de capítulos y lector con selector de capítulo, modo oscuro y pantalla completa.</p>
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="contact" id="contacto">
+<div class="wrap">
+<div class="intro">
+<h2>Contacto</h2>
+<p>Estoy disponible para una estancia profesional. Si tu equipo tiene un lugar, con gusto te comparto más detalles de cualquiera de estos proyectos.</p>
+</div>
+<div class="rows">
+<div class="row"><div class="k">Correo</div><a href="mailto:gabrieleduardoperez21@gmail.com">gabrieleduardoperez21@gmail.com</a></div>
+<div class="row"><div class="k">LinkedIn</div><a href="https://www.linkedin.com/in/eduardoperez21/" target="_blank" rel="noopener">linkedin.com/in/eduardoperez21</a></div>
+<div class="row"><div class="k">GitHub</div><a href="https://github.com/Mixowo" target="_blank" rel="noopener">github.com/Mixowo</a></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">© 2026 Eduardo Pérez · Ingeniería en Software, UAdeO · Los Mochis, Sinaloa</div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-carousel]').forEach(function (root) {
+  var slides = root.querySelectorAll('.slide');
+  var dotsBox = root.querySelector('.dots');
+  var frame = root.querySelector('.frame');
+  var dots = [];
+  var cur = 0;
+
+  function show(i) {
+    cur = (i + slides.length) % slides.length;
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === cur); });
+    dots.forEach(function (d, k) {
+      d.classList.toggle('active', k === cur);
+      d.setAttribute('aria-current', k === cur ? 'true' : 'false');
+    });
+  }
+
+  if (slides.length < 2) { root.classList.add('single'); show(0); return; }
+
+  slides.forEach(function (_, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'dot';
+    b.setAttribute('aria-label', 'Ir a la imagen ' + (i + 1));
+    b.innerHTML = '<span></span>';
+    b.addEventListener('click', function () { show(i); });
+    dotsBox.appendChild(b);
+    dots.push(b);
+  });
+
+  root.querySelector('.prev').addEventListener('click', function () { show(cur - 1); });
+  root.querySelector('.next').addEventListener('click', function () { show(cur + 1); });
+
+  var x0 = null;
+  frame.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  frame.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) show(dx < 0 ? cur + 1 : cur - 1);
+    x0 = null;
+  }, { passive: true });
+
+  show(0);
+});
+</script>
+</body>
+</html>
